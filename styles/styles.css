@@ -1,0 +1,463 @@
+/*
+Krista Koller
+11/12/2024
+styles.css 
+*/
+
+/*CSS Reset */ body, header, nav, main, footer, img, h1, h3 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Style rules for body and images*/
+    body 
+    {
+        background-image: url(images/night\ sky.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        border-color: #aa31f5;
+    }
+
+    #banner img
+    {
+        height: 320px;
+        max-width: 320px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+/*Style for Navigation*/
+
+        nav 
+        {
+            background-color: rgb(88, 1, 122) ; 
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(0, 0, 51);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            text-align: center; 
+            }
+
+        nav li {
+            display: inline-block;
+            font-size: 1.5em;
+            font-family:"Agdasimo", sans-serif;
+            font-weight: bold;
+          }
+       
+        nav li a {
+            display: block;
+            color: white;
+            font-family: "Playwrite GB S", cursive;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
+            }
+
+        nav li a:hover 
+        {
+            background-color: #aa31f5;
+            Opacity: 0.75;
+        }
+
+        nav a:active
+        {
+            Color: #aa31f5;
+        }
+
+/*Style  for aside headers and footers*/
+    #greeting
+    {
+        text-align: center;
+        font-size: 10em;
+        font-weight: bold;
+        text-shadow: 4px 4px 10px #aa31f5;
+        grid-column: 1 / 2;
+    }
+
+
+/*Styles for Paragraph and headers*/
+    p
+    {
+        padding: 2px 30px;
+        background-color: rgba(144, 125, 214, 0.4);
+        text-align: center;  
+    }
+
+    h1 
+    {
+        font-size: 3.5em;
+        font-family: "Prata", serif;
+        text-shadow:2px 2px #aa31f5;
+        text-align: center;
+    }
+
+    .header
+    {
+        font-size: 2.5em;
+        font-weight: bold;
+        font-family: "Prata", serif;
+        text-shadow:2px 1px #aa31f5;
+        text-align: center;
+    }
+
+/* Figure and image style rules */
+figure 
+{
+    border: 4px solid rgb(0, 0, 51);
+    box-shadow: 6px 6px 10px rgb(0, 0, 51);
+    max-width: 600px;
+    margin: 2% auto;
+}
+
+figcaption 
+{
+    padding: 2%;
+    border-top: 4px solid rgb(0, 0, 51); 
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(144, 125, 214, 0.4);
+}
+
+img, video
+{
+    width: 100%;
+    height: auto;
+}
+
+/* style rules for table and columns */
+.columns 
+{
+    column-rule: 2px solid #aa31f5;
+    column-gap: 3rem;
+    padding: 30px;
+    background-color: rgba(144, 125, 214, 0.4);
+    text-align: center;
+}
+
+#secondcolumn 
+{
+    break-before: column;
+}
+
+aside
+{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #aa31f5;
+    grid-column: 1 / 2;
+    
+}
+
+table 
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 51);
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 51);
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+}
+
+th
+{
+    background-color: rgb(88, 1, 122);
+    color: #fff;
+    font-size: 1.15em;
+    padding: 20px;
+    text-align: center;
+}
+
+tr:nth-child(odd) 
+{
+    background-color: rgba(144, 125, 214, 0.4);
+}
+
+tr:nth-child(even)
+{
+    background-color: rgba(201, 186, 255, 0.685);
+}
+
+/*Style rules for form*/
+
+fieldset, input, textarea 
+{
+    margin-bottom: 2%;
+}
+
+textarea, input
+{
+    background-color: rgb(88, 1, 122);
+    color: white;
+}
+
+fieldset
+{
+    background-color: rgba(144, 125, 214, 0.4);
+    text-align: center;
+}
+
+fieldset legend 
+{
+    background-color: rgb(88, 1, 122);
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+label 
+{
+    background-color: rgba(144, 125, 214, 0.4);
+    font-size: 1.5em;
+    display: block;
+    padding-top: 2%;
+}
+
+form #submit, #reset
+{
+    display: inline-block;
+    padding: 2%;
+    background-color: rgb(88, 1, 122);
+    color: #f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+/*Media query for mobile*/
+@media screen and (min-width: 360px), print 
+{
+    /*Nav for mobile*/
+    nav ul 
+    {
+        padding: 0;
+    }
+    
+    
+    nav li 
+    { 
+        display: block;
+    }
+
+    nav li a
+    {
+        border-bottom-style:none;
+        border-bottom-width: 0;
+        border-style: solid;
+        border-width: 2.5px;
+        border-color: rgb(0, 0, 51);
+    }
+    
+    p
+    {
+        font-size: 1rem;
+        margin: 2%;
+    }
+
+    /*Fig for mobile*/
+    .grid
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    /*header for mobile*/
+    #greeting
+    {
+        font-size: 6rem;
+    }
+
+    aside 
+    {
+        font-size: 2em;
+    }
+
+    .header
+    {
+        font-size: 1.25em;
+        margin: 0px 0px;
+        text-shadow: none;
+        background-color: rgba(144, 125, 214, 0.4);
+    }
+
+    #banner img
+    {
+        padding-left: 12%;
+    }
+    /*Column and table styles */
+    .columns 
+    {
+        column-count: 1;
+        font-size: 1rem;
+    }
+
+    .desktop
+    {
+        display: none;
+    }
+
+    .mobile
+    {
+        display: block;
+    }
+
+    /*Style rules for form*/
+    
+    form 
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    form #submit, #reset
+    {
+        margin: 0px 150px;
+    }
+
+}
+
+ /* Media query for tablet Viewport*/
+ @media screen and (min-width: 767px ), print 
+{
+    nav ul 
+    {
+        padding: 0;
+    }
+    
+    
+    nav li 
+    { 
+        display: block;
+    }
+
+    nav li a
+    {
+        border-bottom-style:none;
+        border-bottom-width: 0;
+        border-style: solid;
+        border-width: 2.5px;
+        border-color: rgb(0, 0, 51);
+    }
+    p
+    {
+        font-size: 1.5rem;
+        margin: 2%;
+    }
+
+    .grid 
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .columns 
+    {
+        column-count: 1;
+        font-size: 1.5rem;
+    }
+
+    form #submit, #reset
+    {
+        display: inline-block;
+        margin: 0px 175px 50px;
+    }
+
+    #banner img
+    {
+        padding-left: 35%;
+    }
+}
+
+ /*Media query for desktop viewport*/
+ @media screen and (min-width: 1025px ), print
+{
+            
+    /*Desktop viewport: Style rules for nav area */
+    nav li 
+    {
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    
+    nav li a 
+    {
+        border: none;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em; 
+    }
+
+    /*Desktop Viewport: style rules for main content*/
+
+    .header
+    {
+        font-size: 2.5em;
+        text-shadow:2px 1px #aa31f5;
+        
+    }
+
+    #banner img
+    {
+        padding-left: 40%;
+    }
+
+
+    aside
+    {
+        font-size: 2.5rem;
+    }
+    .grid 
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }   
+
+    p
+    {
+        font-size: 1.5rem;
+    }
+
+    .columns
+    {
+        column-count: 2; 
+        font-size: 2rem;
+    }
+
+    .desktop 
+    {
+        display: block;
+    }
+
+    .mobile 
+    {
+        display: none;
+    }
+
+    /*style rules for form*/
+    form
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form #submit, #reset
+    {
+        display: inline-block;
+        margin: 0px 400px 50px 400px;
+    }
+}
